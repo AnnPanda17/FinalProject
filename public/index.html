@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- css -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+</head>
+  <body>
+
+
+    <noscript>
+      <div>BAMBOOZLED! TURN ON JAVASCRIPT.</div>
+  </noscript>
+
+    <!-- How long can this joke go for? -->
+
+    <div class="container" style="background-color: #E8E8E8;">
+      <div id="locationWrapper">
+        <span id="locationDisplay" class="small">WHERE IN THE WORLD IS CARMEN SANDIEGO?</span></div>
+      <div class="container-fluid text-center">
+        <!-- Fun fact: The default location is Rochester, NY because of the cold winters at Rochester Institute of Technology -->
+        <!-- IT WAS FUCKING COLD walking to classes in different buildings. -->
+        <p class="large"><span class="temperature jsMainTemp" tempf="57">Weather Doggos</span><span id="degree">°?!</span></p>
+        <p id="description"></p>
+        <div class="row">
+          <img class="img row coverimg" src="img/cover1.jpg"></img>
+
+        </div>
+
+        <p class="flavor">HELO FREN</p>
+
+        <button class="now">What's the current weather?</button>
+
+
+        <div class="content">
+          <form action="/Where" method="post">
+          <!--  <div id="whereInput">
+              <input id="LocationQuery" maxlength="90" name="LocationQuery" placeholder="WHERE ARE TREATS?" type="text" value=""> <input type="submit" value="LEFS GO!" id="fuckingweather">
+            </div> -->
+          </form>
+
+
+          <div class="options">
+            <div>
+              <input data-val="true" data-val-required="The Celsius field is required." id="Celsius" name="Celsius" type="checkbox" value="true"><input name="Celsius" type="hidden" value="false"> <label for="Celsius">Silly Americans, Give Me Celsius!</label>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="forecast">
+          <div class="forecastHeader">
+            <h1>LET'S FIND SOME PUPPERS</h1>
+
+          </div>
+          <div class="animalPosts">
+          </div>
+          <button class="pups">MORE PUPPERS PLEZ</button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src='js/config.js'></script>
+      <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+
+</html>
